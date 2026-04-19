@@ -1,0 +1,19 @@
+:root {
+    --color-verde: #2c6b27;
+    --color-verde-claro: #5fb73c;
+    --color-gris-oscuro: #333333;
+    --color-fondo: #f3f3ed;
+    --color-texto: #272727;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Evita que el menú tape los títulos */
+}
