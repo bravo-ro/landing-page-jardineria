@@ -247,3 +247,71 @@ section {
     font-size: 0.8rem; 
     color: #777; 
 }
+
+.historia-texto {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.contenedor-testimonios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-testimonio {
+    width: 250px; 
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-testimonio img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.zig-zag-fila {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.zig-zag-fila:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.zig-zag-texto, .zig-zag-img {
+    flex: 1;
+}
+
+.zig-zag-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.titulo-subseccion {
+    text-align: center;
+    font-size: 2rem; 
+    margin-bottom: 30px;
+    color: var(--color-verde);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.titulo-subseccion::after {
+    content: '';
+    width: 60px; 
+    height: 3px; 
+    background-color: var(--color-verde-claro);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
