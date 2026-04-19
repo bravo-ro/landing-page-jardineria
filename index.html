@@ -152,12 +152,44 @@
             </div>            
         </section>
 
-
         <section id="contacto">
-            
+            <h2 class="titulo-seccion">Formulario de Contacto</h2>
+            <form id="formContacto">
+                <div class="grupo-form">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+56 9..." required>
+                </div>
+                <div class="grupo-form">
+                    <label for="consulta">Consulta o Requerimiento:</label>
+                    <textarea id="consulta" name="consulta" placeholder="Escribe aquí los detalles..." required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>            
         </section>
-
     </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <h3>Huerto Feliz</h3>
+            <p>Teléfono 1: +56 9 1234 5678</p>
+            <p>Teléfono 2: +56 9 0234 5678</p>
+            <p>Síguenos en: Instagram | Facebook</p>
+            <hr style="border-color: #555; margin: 10px 0;">
+            <p>Desarrollado por 
+                <a href="https://github.com/bravo-ro/landing-page-jardineria" target="_blank" class="enlace-dev">
+                    <strong>Liliana Bravo</strong>
+                </a>
+            </p>
+        </div>
+    </footer>    
 
     <script>
         const btnMenu = document.getElementById('btnMenu');
@@ -166,7 +198,13 @@
         enlacesMenu.addEventListener('click', () => {
             if(window.innerWidth <= 768){ enlacesMenu.classList.remove('activo'); }
         });
-    </script>    
 
+        const formulario = document.getElementById('formContacto');
+        formulario.addEventListener('submit', function(evento) {
+            evento.preventDefault();
+            alert('¡Gracias! Tu formulario ha sido enviado con éxito a Huerto Feliz.');
+            formulario.reset();
+        });        
+    </script>    
 </body>
 </html>

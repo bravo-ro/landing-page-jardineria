@@ -381,3 +381,77 @@ section {
     flex-shrink: 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grupo-form { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.grupo-form label { 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+.grupo-form input, .grupo-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.grupo-form textarea { 
+    resize: vertical; 
+    min-height: 100px; 
+}
+
+form button {
+    background-color: var(--color-verde);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover { 
+    background-color: var(--color-verde-claro); 
+}
+
+footer {
+    background-color: var(--color-gris-oscuro);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enlace-dev {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.enlace-dev:hover {
+    color: var(--color-verde-claro); 
+}
