@@ -7,6 +7,9 @@
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 
+    <link rel="preload" as="image" href="imagenes/header1.png">
+    <link rel="preload" as="image" href="imagenes/header2.png">
+    <link rel="preload" as="image" href="imagenes/header3.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +18,53 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <nav>
+        <a href="#" class="logo">Huerto Feliz</a>
+        <button class="menu-toggle" id="btnMenu">☰</button>
+        <ul class="nav-links" id="enlacesMenu">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#informacion">Información</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Expertos en el cuidado de tu jardín</h1>
+        <p>Transformamos y protegemos tu jardín con soluciones integrales, estructuradas y eficientes. Nuestro equipo de profesionales asegura resultados duraderos mediante diagnósticos precisos y metodologías probadas, para que solo te preocupes de disfrutar tu espacio exterior.</p>
+        <a href="#servicios" class="btn-cta">Ver Nuestros Servicios</a>
+    </header>
 
     <main>
+        <section id="servicios">
+
+        </section>
+
+
+        <section id="historia">
+            
+        </section>
+
+
+        <section id="informacion">
+            
+        </section>
+
+
+        <section id="contacto">
+            
+        </section>
 
     </main>
 
+    <script>
+        const btnMenu = document.getElementById('btnMenu');
+        const enlacesMenu = document.getElementById('enlacesMenu');
+        btnMenu.addEventListener('click', () => { enlacesMenu.classList.toggle('activo'); });
+        enlacesMenu.addEventListener('click', () => {
+            if(window.innerWidth <= 768){ enlacesMenu.classList.remove('activo'); }
+        });
+    </script>    
 
 </body>
 </html>
